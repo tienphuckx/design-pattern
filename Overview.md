@@ -43,3 +43,36 @@ Nó là các phương án thiết kế
 
 ### 2.7 Proxy
     - Đại diện cho một đối tượng khác để kiểm soát truy cập vào đối tượng đó.
+
+## 3. BEHAVIORAL
+    - Behavioral Patterns liên quan đến cách giao tiếp và trao đổi thông tin giữa các đối tượng và lớp. 
+
+### 3.1 Chain of Responsibility
+    - Cho phép chuyển các yêu cầu dọc theo chuỗi các đối tượng xử lý.
+
+### 3.2 Command
+    - Đóng gói yêu cầu thành các đối tượng có thể tham số hóa
+
+### 3.3 Iterator
+    - Truy cập tuần tự các phần tử một tập hợp dữ liệu
+
+### 3.4 Mediator
+    - Định nghĩa một đối tượng trung gian để giao tiếp giữa các đối tượng.
+
+### 3.5 Memento
+    - 
+
+### 3.6 Observer
+    - Định nghĩa phụ thuộc một chiều giữa các đối tượng
+
+### 3.7 State
+    - Cho phép một đối tượng thay đổi hành vi dựa trên trang thái nội bộ
+
+### 3.8 Strategy
+    - Định nghĩa tập các thuật toán có thể thay thế cho nhau để giải quyết một vấn đề.
+
+### 3.9 Template Method
+    - Định nghĩa bố cục xử lý chung cho một thuật toán, hoãn lại các bước cụ thể cho lớp con.
+
+### 3.10 Visitor
+    - Tách biệt các thuật toán khởi các đối tượng mà chúng hoạt động trên đó.
