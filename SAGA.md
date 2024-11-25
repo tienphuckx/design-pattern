@@ -5,6 +5,9 @@ SAGA có 2 Pattern chính
     - Mỗi node tự xử lý các giao dịch và thông báo kết quả bằng EVENT. 
     - Apply Message Brocker (Người đưa thư) đứng ở giữa để quản lý các EVENT mà các Service tạo ra/ lắng nghe.
     - Mỗi giao dịch sẽ được định danh bằng mỗi ID khác nhau.
+    - Mỗi tác vụ mà mỗi service xử  lý đều có 2 kịch bản
+        + success: notify cho service tiếp theo
+        + fail: xử lý và notify cho node trước đó. 
 
 ## 2. OrChestration (Điều phối tập trung)
     - Cần Build một Service điều phối ở trung tâm điều khiển các node tuần tự hoàn thành giao dịch.
@@ -37,3 +40,11 @@ SAGA có 2 Pattern chính
     - Khi hệ thống có nhiều dịch vụ microservice hoạt động độc lập
     - Cần xử lý các giao dich phân tán, không đồng bộ.
     - Tăng khả năng phục hồi lỗi và linh hoạt trong việc hoàn tác giao dịch (các tác vụ có yếu tố hoàn tác cao: trả hàng, hoàn tiền, ...)
+
+
+### BÀI TOÁN:
+    Hệ thống đặt hàng E-Commerce 
+    - Thanh toán
+    - Kho hàng
+    - Giao hàng
+    Apply CHOREOGRAPHY pattern
