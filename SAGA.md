@@ -1,8 +1,16 @@
 SAGA có 2 Pattern chính
 
 
-## 1. Choreography (Hợp tác nhưng phân tán)
+## 1. Choreography (Hợp tác nhưng phân tán) 
+    - Mỗi node tự xử lý các giao dịch và thông báo kết quả bằng EVENT. 
+    - Apply Message Brocker (Người đưa thư) đứng ở giữa để quản lý các EVENT mà các Service tạo ra/ lắng nghe.
+    - Mỗi giao dịch sẽ được định danh bằng mỗi ID khác nhau.
+
 ## 2. OrChestration (Điều phối tập trung)
+    - Cần Build một Service điều phối ở trung tâm điều khiển các node tuần tự hoàn thành giao dịch.
+    - Ưu điểm: dễ quản lý và tracking giao dịch.
+    - Nhược điểm: quản lý tập trung nên dễ bị nghẽn cổ chai (bottleneck)
+    - Không cần thiết sử dụng Message brocker nhưng cũng có thể apply.
 
     EXAMPLES of Choreography
 
